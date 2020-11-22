@@ -6,16 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
+    <com.jackandphantom.circularimageview.CircleImage
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="165dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        app:border_width="3dp"
+        app:border_color="#ed2e2e"
+        app:add_shadow="true"
+        app:shadow_color="#a10909"
+        app:shadow_radius="20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@mipmap/ic_icon" />
 
     <TextView
         android:id="@+id/textView"
